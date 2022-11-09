@@ -38,4 +38,5 @@ allows us to expand the utility of our software in our day-to-day lives.
 ![alt text](https://github.com/tobixoxo/Sehpaathi/blob/main/Sehpaathi%20Use%20case%20diagram.png)
 ## Activity Diagram
 ![alt text](https://github.com/tobixoxo/Sehpaathi/blob/main/Sehpaathi%20-%20Activity%20Diagram.jpg)
-
+## Class Diagram
+![alt text](https://github.com/tobixoxo/Sehpaathi/blob/main/Sehpaathi-Class_Diagram.png)
