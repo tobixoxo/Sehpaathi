@@ -34,5 +34,8 @@ anything.
 Our solution also incorporates an image processing model that helps
 extracting texts from images and can further be used in our QA model. This
 allows us to expand the utility of our software in our day-to-day lives.
-## Tech Stack
+## Use Case Diagram
+![alt text](https://github.com/tobixoxo/Sehpaathi/blob/main/Sehpaathi%20Use%20case%20diagram.png)
+## Activity Diagram
+![alt text](https://github.com/tobixoxo/Sehpaathi/blob/main/Sehpaathi%20-%20Activity%20Diagram.jpg)
 
