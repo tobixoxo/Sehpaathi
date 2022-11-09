@@ -40,5 +40,3 @@ allows us to expand the utility of our software in our day-to-day lives.
 ![alt text](https://github.com/tobixoxo/Sehpaathi/blob/main/Sehpaathi%20-%20Activity%20Diagram.jpg)
 ## Class Diagram
 ![alt text](https://github.com/tobixoxo/Sehpaathi/blob/main/Sehpaathi-Class_Diagram.png)
-## SRS
-![alt text](https://github.com/tobixoxo/Sehpaathi/blob/main/SOFTWARE%20REQUIREMENTS%20SPECIFICATIONS.pdf)
