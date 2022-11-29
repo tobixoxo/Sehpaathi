@@ -1,4 +1,5 @@
 from flask import Flask, render_template, request
+from chat import chat
 app = Flask(__name__)
 
 CHAT_HISTORY = []
@@ -8,7 +9,7 @@ def hello():
         student_query = request.form['query']
         if student_query == "":
             return
-        bot_response = "This is dummy Response!"
+        bot_response = chat(student_query)
         # print("Query is : ", bot_response)
         CHAT_HISTORY.append(student_query)
         CHAT_HISTORY.append(bot_response)

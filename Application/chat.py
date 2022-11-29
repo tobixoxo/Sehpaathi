@@ -16,7 +16,7 @@ with open("intents.json") as file:
 
 def chat(inp):
     # load trained model
-    model = keras.models.load_model('chat_model')
+    model = keras.models.load_model('chat_model_new.h5')
 
     # load tokenizer object
     with open('tokenizer.pickle', 'rb') as handle:
@@ -38,4 +38,3 @@ def chat(inp):
             return np.random.choice(i['responses'])
 
 
-chat()
