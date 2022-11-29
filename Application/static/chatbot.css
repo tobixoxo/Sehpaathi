@@ -1,0 +1,156 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:300); 
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: "Titillium Web", sans-serif;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+html::-webkit-scrollbar{
+    width: 1.75vh;
+}
+
+html::-webkit-scrollbar-thumb{
+    background-color: #333650;
+    border-radius: 2.4rem;
+    margin-right: 2rem;
+}
+html::-webkit-scrollbar-thumb:hover{
+    background-color: #333650;
+}
+
+html::-webkit-scrollbar-track{
+    background-color:#f9f9f9!important
+}
+
+/* Section - 1 */
+
+.title{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.bot{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    /* border: 2px solid red; */
+    /* position: absolute;
+    top: 50px; */
+    margin-top: 10rem;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-image: url('https://ordinaryfaith.net/wp-content/uploads/2016/03/Gray-plain-website-background.jpg'); 
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.chat-box{
+    width: 425px;
+    height: 475px;
+    background-color: #f9f9f9;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.client-info{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80px;
+    background-color: #48c9b0;
+    color: antiquewhite;
+}
+.client-info h2{
+    position: relative;
+    left: 18px;
+}
+.client-info p{
+    position: relative;
+    top: 20px;
+    left: 50px;
+}
+
+.bottom{
+    background-color: #48c9b0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    /* top: 20px; */
+    height: 50px;
+}
+
+.bottom input{
+    border-radius: 5px;
+    height: 28px;
+    background-color: rgb(205, 202, 202);
+    width: 295px;
+}
+
+.chat{
+    height: 345px;
+    overflow-y: scroll;
+    background-color: rgb(221, 215, 215);
+    display: flex;
+    flex-wrap: wrap;
+    word-wrap: break-word;
+}
+
+#message{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 425px;
+}
+
+#bottom input ::placeholder{
+    color: black;
+}
+
+#message li{
+    color: aliceblue;
+    display: flex;
+    /* flex-wrap: wrap; */
+    justify-content: center;
+    align-items: center;
+    background-color: #5e857d;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 6px ;
+    height:  25px;
+    /* word-wrap: break-word; */
+}
+
+.bottom form input[type=submit]:hover,input[type=submit]:focus {
+    background: #148f77;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    transform: scale3d(1.5)
+}
+
+.bottom form input[type=submit]:active {
+transform: translateY(2px);
+box-shadow: 0 2.5px 5px rgba(0, 0, 0, 0.2);
+}
+
+.bottom form input[type=submit]{
+    background-color: darkseagreen; 
+    width: 70px;
+}
