@@ -29,8 +29,8 @@ class Student(db.Model):
         return f'<Student {self.firstname}>'
 
 CHAT_HISTORY = []
-@app.route('/', methods = ['POST', 'GET'])
-def hello():
+@app.route('/chatbot', methods = ['POST', 'GET'])
+def chatbot():
     if request.method == 'POST':
         student_query = request.form['query']
         if student_query == "":
@@ -62,12 +62,28 @@ def signup():
         db.session.add(student)
         db.session.commit()
 
-        return redirect(url_for('hello'))
+        return redirect(url_for('chatbot'))
     return render_template('signup.html')
 
 @app.route('/login', methods = ['POST', 'GET'])
 def login():
-    if request.method == 'POST':
-        pass
-        
+    if request.method == "POST":
+        name = request.form['firstname']
+        email = request.form['email']
+        if name == "" or email == "":
+            return redirect(url_for('invalid_login'))
+        id = db.session.query(Student.id).filter_by(email = email).first()[0]
+        if id is not None:
+            id_name = db.session.query(Student.firstname).filter_by(id = id).first()[0]
+            print(id_name)
+            if id_name == name:
+                return redirect(url_for('chatbot'))
+            else:
+                return redirect(url_for('invalid_login'))
+        else:
+            return redirect(url_for('invalid_login'))
     return render_template('login.html')
+
+@app.route('/error')
+def invalid_login():
+    return '<h1>invalid login!!</h1>'
