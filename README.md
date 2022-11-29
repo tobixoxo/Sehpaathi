@@ -1,7 +1,4 @@
-
-
 # Software Engineering Project
-
 
 ## Project Write-up
 
@@ -15,6 +12,7 @@ to questions while studying. Students often get caught up juggling between
 websites and are still left with their heads scratching.
 
 ## Submission-
+
 Our solution is a AI Enabled Answering Bot that helps students find quality
 answers and study materials to their questions.
 Automated Answering is the process of computing answers by computers
@@ -34,9 +32,15 @@ anything.
 Our solution also incorporates an image processing model that helps
 extracting texts from images and can further be used in our QA model. This
 allows us to expand the utility of our software in our day-to-day lives.
+
 ## Use Case Diagram
-![alt text](https://github.com/tobixoxo/Sehpaathi/blob/main/Sehpaathi%20Use%20case%20diagram.png)
+
+![alt text](https://github.com/tobixoxo/Sehpaathi/blob/main/Sehpaathi_Use_Case.png)
+
 ## Activity Diagram
-![alt text](https://github.com/tobixoxo/Sehpaathi/blob/main/Sehpaathi%20-%20Activity%20Diagram.jpg)
+
+![alt text](https://github.com/tobixoxo/Sehpaathi/blob/main/Sehpaathi%20-%20Activity%20Diagram.png)
+
 ## Class Diagram
+
 ![alt text](https://github.com/tobixoxo/Sehpaathi/blob/main/Sehpaathi-Class_Diagram.png)
