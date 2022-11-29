@@ -29,12 +29,17 @@ class Student(db.Model):
         return f'<Student {self.firstname}>'
 
 CHAT_HISTORY = []
+
+@app.route('/')
+def home():
+    return render_template('page.html')
+
 @app.route('/chatbot', methods = ['POST', 'GET'])
 def chatbot():
     if request.method == 'POST':
         student_query = request.form['query']
         if student_query == "":
-            return
+            return redirect(url_for('error'))
         bot_response = chat(student_query)
         # print("Query is : ", bot_response)
         CHAT_HISTORY.append(student_query)

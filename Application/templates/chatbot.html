@@ -1,45 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../static/chatbot.css">
-    <link rel="stylesheet" type="text/css" href="login_style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link href='https://fonts.googleapis.com/css?family=Titillium+Web:400,300,600' rel='stylesheet' type='text/css'>  
-    <link href='https://fonts.googleapis.com/css?family=Titillium+Web:400,300,600' rel='stylesheet' type='text/css'> 
-    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
-    <title>Chatbot</title>
-</head>
-<body>
-    <div class="container">
-        <div class="chat-box">
-            <div class="client-info">
-                <h2>Sehpathi - PEC Friend</h2>
-                <p>online</p>
-            </div>
-            <div class="chats">
-                <div class="chat">
-                    {% if CHAT_HISTORY %}
-                    <ul id="message">
-                        {% for text in CHAT_HISTORY %}
-                        <li>{{text}}</li>
-                        {% endfor %}
-                    </ul>
-                    {% else %}
-                    <p>no response Yet!</p>
-                    {%endif%}
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="../static/chatbot.css" />
+        <link rel="stylesheet" type="text/css" href="login_style.css" />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+        />
+        <link
+            href="https://fonts.googleapis.com/css?family=Titillium+Web:400,300,600"
+            rel="stylesheet"
+            type="text/css"
+        />
+        <link
+            href="https://fonts.googleapis.com/css?family=Titillium+Web:400,300,600"
+            rel="stylesheet"
+            type="text/css"
+        />
+        <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+        <link
+            rel="stylesheet"
+            href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
+            integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp"
+            crossorigin="anonymous"
+        />
+        <title>Chatbot</title>
+    </head>
+    <body>
+        <div class="container">
+            <div class="chat-box">
+                <div class="client-info">
+                    <h2>Sehpathi - PEC Friend</h2>
+                    <p>online</p>
                 </div>
-                <div class="bottom">
-                    <form action="/" method="POST">
-                        <input type="text" name="query" placeholder="Enter your message" />
-                        <input type="submit" />
-                    </form>
+                <div class="chats">
+                    <div class="chat">
+                        {% if CHAT_HISTORY %}
+                        <ul id="message">
+                            {% for text in CHAT_HISTORY %}
+                            <li>{{text}}</li>
+                            {% endfor %}
+                        </ul>
+                        {% else %}
+                        <p>no response Yet!</p>
+                        {%endif%}
+                    </div>
+                    <div class="bottom">
+                        <form action="/chatbot" method="POST">
+                            <input
+                                type="text"
+                                name="query"
+                                placeholder="Enter your message"
+                            />
+                            <input type="submit" />
+                        </form>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-</body>
+    </body>
 </html>
