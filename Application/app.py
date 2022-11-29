@@ -62,7 +62,7 @@ def signup():
         db.session.add(student)
         db.session.commit()
 
-        return redirect(url_for('chatbot'))
+        return redirect(url_for('login'))
     return render_template('signup.html')
 
 @app.route('/login', methods = ['POST', 'GET'])
