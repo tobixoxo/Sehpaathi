@@ -64,3 +64,10 @@ def signup():
 
         return redirect(url_for('hello'))
     return render_template('signup.html')
+
+@app.route('/login', methods = ['POST', 'GET'])
+def login():
+    if request.method == 'POST':
+        pass
+        
+    return render_template('login.html')
