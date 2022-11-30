@@ -436,7 +436,7 @@
 											"font": "Lato;13;1",
 											"left": 613,
 											"top": 439,
-											"width": 134.41796875,
+											"width": 178.46383666992188,
 											"height": 13,
 											"text": "Chat Page"
 										},
@@ -471,7 +471,7 @@
 									"font": "Lato;13;0",
 									"left": 608,
 									"top": 432,
-									"width": 144.41796875,
+									"width": 188.46383666992188,
 									"height": 25,
 									"stereotypeLabel": {
 										"$ref": "AAAAAAGExBNxZjNT0dI="
@@ -508,9 +508,9 @@
 											"font": "Lato;13;0",
 											"left": 613,
 											"top": 462,
-											"width": 134.41796875,
+											"width": 178.46383666992188,
 											"height": 13,
-											"text": "do/ChatWithChatbot",
+											"text": "do/Send College Related Query",
 											"horizontalAlignment": 0
 										},
 										{
@@ -525,16 +525,16 @@
 											"font": "Lato;13;0",
 											"left": 613,
 											"top": 477,
-											"width": 134.41796875,
+											"width": 178.46383666992188,
 											"height": 13,
-											"text": "do/PlayReceivedSongs",
+											"text": "do/Recieve Response",
 											"horizontalAlignment": 0
 										}
 									],
 									"font": "Lato;13;0",
 									"left": 608,
 									"top": 457,
-									"width": 144.41796875,
+									"width": 188.46383666992188,
 									"height": 38
 								},
 								{
@@ -548,9 +548,9 @@
 									},
 									"visible": false,
 									"font": "Lato;13;0",
-									"left": 168,
-									"top": 296,
-									"width": 10,
+									"left": 592,
+									"top": 472,
+									"width": 177.4528350830078,
 									"height": 10
 								},
 								{
@@ -575,14 +575,14 @@
 											"font": "Lato;13;0",
 											"left": 608,
 											"top": 495,
-											"width": 144.41796875,
+											"width": 188.46383666992188,
 											"height": 50
 										}
 									],
 									"font": "Lato;13;0",
 									"left": 608,
 									"top": 495,
-									"width": 144.41796875,
+									"width": 188.46383666992188,
 									"height": 50
 								}
 							],
@@ -590,8 +590,8 @@
 							"containerChangeable": true,
 							"left": 608,
 							"top": 432,
-							"width": 144.41796875,
-							"height": 113,
+							"width": 188.46383666992188,
+							"height": 121,
 							"nameCompartment": {
 								"$ref": "AAAAAAGExBNxZjNSTLA="
 							},
@@ -1648,7 +1648,7 @@
 								"$ref": "AAAAAAGExBNxZjNR1gU="
 							},
 							"lineStyle": 1,
-							"points": "752:488;960:488;960:296;921:296",
+							"points": "796:491;960:488;960:296;921:296",
 							"showVisibility": true,
 							"nameLabel": {
 								"$ref": "AAAAAAGExB5zyTVM3AI="
@@ -2412,7 +2412,7 @@
 								"$ref": "AAAAAAGExARiGTCNb2k="
 							},
 							"lineStyle": 1,
-							"points": "323:144;328:384;680:384;680:431",
+							"points": "323:144;328:384;680:384;689:431",
 							"showVisibility": true,
 							"nameLabel": {
 								"$ref": "AAAAAAGExC43MTYe6CE="
@@ -3004,8 +3004,8 @@
 										"$ref": "AAAAAAGEybNxswqSwJg="
 									},
 									"font": "Arial;13;0",
-									"left": 540,
-									"top": 577,
+									"left": 543,
+									"top": 582,
 									"width": 101.16259765625,
 									"height": 13,
 									"alpha": 1.5707963267948966,
@@ -3027,8 +3027,8 @@
 									},
 									"visible": null,
 									"font": "Arial;13;0",
-									"left": 600,
-									"top": 588,
+									"left": 602,
+									"top": 594,
 									"height": 13,
 									"alpha": 1.5707963267948966,
 									"distance": 30,
@@ -3048,8 +3048,8 @@
 									},
 									"visible": false,
 									"font": "Arial;13;0",
-									"left": 571,
-									"top": 554,
+									"left": 576,
+									"top": 557,
 									"height": 13,
 									"alpha": -1.5707963267948966,
 									"distance": 15,
@@ -3067,7 +3067,7 @@
 								"$ref": "AAAAAAGExBNxZjNR1gU="
 							},
 							"lineStyle": 1,
-							"points": "613:545;550:599",
+							"points": "617:553;554:599",
 							"showVisibility": true,
 							"nameLabel": {
 								"$ref": "AAAAAAGEybNxswqUSa4="
@@ -3730,7 +3730,7 @@
 									"_parent": {
 										"$ref": "AAAAAAGExBNxZjNP+18="
 									},
-									"name": "ChatWithChatbot"
+									"name": "Send College Related Query"
 								},
 								{
 									"_type": "UMLActivity",
@@ -3738,7 +3738,7 @@
 									"_parent": {
 										"$ref": "AAAAAAGExBNxZjNP+18="
 									},
-									"name": "PlayReceivedSongs"
+									"name": "Recieve Response"
 								}
 							]
 						},
