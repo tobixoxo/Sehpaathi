@@ -126,12 +126,12 @@ body{
 }
 
 #message li{
-    color: aliceblue;
+    color: black;
     display: flex;
     /* flex-wrap: wrap; */
     justify-content: center;
     align-items: center;
-    background-color: #5e857d;
+    background-color: rgb(221, 215, 215);
     margin-top: 10px;
     margin-bottom: 10px;
     border-radius: 6px ;
@@ -147,7 +147,7 @@ body{
 
 .bottom form input[type=submit]:active {
 transform: translateY(2px);
-box-shadow: 0 2.5px 5px rgba(0, 0, 0, 0.2);
+box-shadow: 0 2.5px 5px rgba(0, 0, 0, 0.2);
 }
 
 .bottom form input[type=submit]{
